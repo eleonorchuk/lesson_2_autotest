@@ -13,7 +13,7 @@ public class IgrashkuPage extends AbstractPage {
     private WebElement howToOrder;
     @FindBy(xpath = "//button[@ id=\"btnNovaUkr\"]")
     private WebElement button;
-    @FindBy(xpath =  "//a[@id=\"571383/3\"]")
+    @FindBy(xpath =  "//a[@id=\"571386/2\"]")
     private WebElement toy;
 
 

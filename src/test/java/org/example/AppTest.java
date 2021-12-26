@@ -52,7 +52,7 @@ public class AppTest
     @Test
     public void scenario4Test() {
         IgrashkuPage ip = new IgrashkuPage("https://bi.ua/");
-        assertTrue(ip.clickToy().getCurrnetUrl().equals("https://bi.ua/ukr/product/figurka-novogodko-ded-moroz-zelenaya-973994.html"));
+        assertTrue(ip.clickToy().getCurrnetUrl().equals("https://bi.ua/ukr/product/figurka-novogodko-olen-svetlo-seryy-973993.html"));
         ip.close();
     }
 }
