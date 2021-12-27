@@ -35,4 +35,5 @@ public abstract class AbstractPage {
     void close() {
         driver.close();
     }
+    WebDriver getDriver() { return driver; }
 }
