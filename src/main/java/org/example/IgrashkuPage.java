@@ -8,17 +8,17 @@ import org.openqa.selenium.support.PageFactory;
 public class IgrashkuPage extends AbstractPage {
 
     @FindBy(xpath = "//a[@href=\"/ukr/help/contacts/\"and@ class=\"linkJ\"]")
-    private WebElement kontakti;
+    public WebElement kontakti;
     @FindBy(xpath = "//a[@ href=\"/ukr/help/how_to_order/\"and@ class=\"linkJ\"]")
-    private WebElement howToOrder;
+    public WebElement howToOrder;
     @FindBy(xpath = "//button[@ id=\"btnNovaUkr\"]")
-    private WebElement button;
+    public WebElement button;
     @FindBy(xpath =  "//a[@id=\"571386/2\"]")
-    private WebElement toy;
+    public WebElement toy;
 
 
-    IgrashkuPage(String page) {
-        super(page);
+    IgrashkuPage(WebDriver driver) {
+        super(driver);
         PageFactory.initElements(driver, this);
     }
     public IgrashkuPage clickKontakti() {

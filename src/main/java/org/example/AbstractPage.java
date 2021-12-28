@@ -9,31 +9,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public abstract class AbstractPage {
 
     protected WebDriver driver;
-    protected Cookie cookie;
 
-    AbstractPage(String page)
+    AbstractPage(WebDriver driver)
     {
-        /*
-        System.setProperty(
-                "webdriver.chrome.driver", "src/main/resources/chromedriver.exe"
-        );*/
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-
-        driver.get(page);
-        cookie = driver.manage().getCookieNamed("testing");
-        if (cookie == null)
-            driver.manage().addCookie(new Cookie("testing", "test"));
-
-        driver.manage().window().setSize(new Dimension(1386, 700));
+        this.driver = driver;
     }
 
     String getCurrnetUrl() {
         return driver.getCurrentUrl();
     }
-
-    void close() {
-        driver.close();
-    }
-    WebDriver getDriver() { return driver; }
 }
