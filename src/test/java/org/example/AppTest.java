@@ -70,7 +70,7 @@ public class AppTest
     public void scenario4Test() {
         IgrashkuPage ip = new IgrashkuPage(driver);
         try {
-            assertTrue(ip.clickToy().getCurrnetUrl().equals("https://bi.ua/ukr/product/figurka-novogodko-olen-svetlo-seryy-973993.html"));
+            assertTrue(ip.clickToy().getCurrnetUrl().equals("https://bi.ua/ukr/product/igra-nastolnaya-monopoliya-klassicheskaya-ukrainskaya-c1009657.html"));
         } catch (NoSuchElementException e) {
             assertTrue(false);
         }
